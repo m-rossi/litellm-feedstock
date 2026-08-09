@@ -1,5 +1,5 @@
 {% set name = "litellm" %}
-{% set version = "1.95.0" %}
+{% set version = "1.96.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/litellm-{{ version }}.tar.gz
-  sha256: 0ef126d52c7a559f8353e50d60fd0d5e7e6c8767ad54df25ddaf79b9edca1afc
+  sha256: 340a9b04e1bf8486b0b99f3f6a5556aa59c8f9c16b11b362c95eabea1bcf7a9d
 
 build:
   entry_points:
@@ -31,6 +31,7 @@ requirements:
     - puccinialin
     - python
   run:
+    - pydantic-settings >=2.14.1,<3.0
     - fastuuid >=0.14.0,<1.0
     - httpx >=0.28.0,<1.0
     - python
@@ -41,7 +42,7 @@ requirements:
     - tokenizers >=0.21.0,<1.0
     - click >=8.0.0,<9.0
     - jinja2 >=3.1.6,<4.0
-    - aiohttp >=3.10,<4.0
+    - aiohttp >=3.14.2,<4.0
     - pydantic >=2.10.0,<3.0.0
     - jsonschema >=4.0.0,<5.0
   run_constrained:
