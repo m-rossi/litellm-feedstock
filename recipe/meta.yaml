@@ -13,7 +13,7 @@ build:
   entry_points:
     - litellm = litellm:run_server
   skip: true  # [py>314 or py<311]
-  number: 0
+  number: 1
 
 requirements:
   build:
