@@ -1,5 +1,10 @@
 bot:
   inspection: update-grayskull
+  version_updates:
+    exclude:
+      # 1.82.7 and 1.82.8 have a giant security issue, so do not ship
+      - "1.82.7"
+      - "1.82.8"
 build_platform:
   osx_arm64: osx_64
 conda_build:
