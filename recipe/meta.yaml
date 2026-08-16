@@ -58,6 +58,7 @@ requirements:
     - pyyaml >=6.0.3,<7.0
     - rq >=2.7.0,<3.0
     - orjson >=3.11.6,<4.0
+    - hiredis >=3.0.0,<4.0
     - apscheduler >=3.11.2,<4.0
     - fastapi-sso >=0.19.0,<1.0
     - pyjwt >=2.13.0,<3.0
@@ -69,8 +70,8 @@ requirements:
     - azure-identity >=1.25.2,<2.0
     - azure-storage-blob >=12.28.0,<13.0
     - mcp >=1.28.1,<2.0
-    - litellm-proxy-extras ==0.4.81
-    - litellm-enterprise ==0.1.53
+    - litellm-proxy-extras ==0.4.84
+    - litellm-enterprise ==0.1.54
     - restrictedpython >=8.1,<9.0
     - rich >=13.9.4,<14.0
     - polars >=1.38.1,<2.0
