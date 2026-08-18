@@ -19,6 +19,9 @@ build:
     - cd ..
     - python -m pip install . -vv
   number: 1
+  python:
+    entry_points:
+      - litellm = litellm:run_server
 
 requirements:
   build:
